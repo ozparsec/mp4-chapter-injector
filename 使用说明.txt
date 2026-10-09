@@ -15,8 +15,19 @@
 【文件清单】
   * MP4ChapterTool.exe       图形界面版（双击运行，推荐）
   * MP4ChapterTool-CLI.exe   命令行版（适合脚本批处理 / 自动化任务）
-  * ffmpeg.exe / ffprobe.exe 内置多媒体核心程序（无需另行安装）
   * 使用说明.txt             本说明文件
+
+----------------------------------------------------------------
+【获取 ffmpeg / ffprobe】（程序运行必需，本包未内置）
+  本工具依赖 FFmpeg 音视频组件，因文件体积超 GitHub 单文件上传上限，
+  不随包内置。请从以下任一官方渠道下载后，将 ffmpeg.exe 与 ffprobe.exe
+  放入本程序所在目录（程序会自动优先调用同目录下的 ffmpeg.exe，
+  找不到时改用系统 PATH 中的 ffmpeg）：
+
+  1. gyan.dev 官方构建版（推荐）：https://www.gyan.dev/ffmpeg/builds/
+     下载 ffmpeg-release-full.7z，解压后取出 ffmpeg.exe 与 ffprobe.exe。
+  2. BtbN GitHub Releases 构建：https://github.com/BtbN/FFmpeg-Builds/releases
+     下载 ffmpeg-master-latest-win64-gpl.zip，解压后取出 ffmpeg.exe 与 ffprobe.exe。
 
 ----------------------------------------------------------------
 【图形界面 (GUI) 操作步骤】
